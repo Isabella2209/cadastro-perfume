@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fff7fb, #f9f0f7);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #5a3e49;
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(201, 152, 168, 0.3);
+  padding: 3rem 3.5rem;
+}
+
+.titulo {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #b76e79;
+  letter-spacing: 0.08em;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #92616a;
+}
+
+input,
+select {
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+  border: 2px solid #f0d9e3;
+  border-radius: 20px;
+  background-color: #fff7fb;
+  color: #6e4954;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+  color: #c9a9b4;
+  font-style: italic;
+}
+
+input:focus,
+select:focus {
+  border-color: #d98ca8;
+  box-shadow: 0 0 12px rgba(217, 140, 168, 0.6);
+  outline: none;
+}
+
+.grupo-duplo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.3rem;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.botao {
+  padding: 0.85rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: 0 8px 22px rgba(217, 140, 168, 0.3);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.botao-primary {
+  background: #cc729d;
+  color: white;
+}
+
+.botao-primary:hover {
+  background: #a5557b;
+  box-shadow: 0 12px 30px rgba(165, 85, 123, 0.7);
+}
+
+.botao-secondary {
+  background: #f8d9e1;
+  color: #a35f73;
+}
+
+.botao-secondary:hover {
+  background: #e0b9c8;
+  box-shadow: 0 10px 26px rgba(224, 185, 200, 0.7);
+}
+
+#resposta {
+  font-size: 0.85rem;
+  color: #a5557b;
+  margin-top: 4px;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+@media (max-width: 520px) {
+  .grupo-duplo {
+    grid-template-columns: 1fr;
+  }
+  .botoes {
+    flex-direction: column;
+  }
+}
